@@ -1,2 +1,2 @@
 # Red-team-excercises
-useful one liner fro everything
+useful one liner for everything

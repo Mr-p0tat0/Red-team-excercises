@@ -48,11 +48,11 @@ arp –a
 ``````````
 ## Internal Scanning
 
-- ping 10.0.0.1
+- CMD shell cmd
 ````
-C:\> for /L %i in (1,1,255) do @ping –n 1
-````````
-- find "TTL"
+C:\> for /L %i in (1,1,255) do @ping –n 1 10.0.0.%i | find "TTL"
+``````
+- powershell cmd
 ```
 PS C:\> 1..255 | % {ping –n 1 10.0.0.$_ | sls ttl}
 `````
